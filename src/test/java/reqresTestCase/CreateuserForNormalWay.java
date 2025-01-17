@@ -105,6 +105,18 @@ public class CreateuserForNormalWay {
 		
 		
 	}
+	
+	@Test
+	public void updateUserDetailsUsingReqSpec() {
+		CreateUsersUsingReqSpecAndBuilder reqSpec = new CreateUsersUsingReqSpecAndBuilder();
+		given(reqSpec.updatetUserDetailsWithreqSpec())
+		.when()
+		.put()
+		.then()
+		.log()
+		.all()
+		.statusCode(200);
+	}	
 
 
 }

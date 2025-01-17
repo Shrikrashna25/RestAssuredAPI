@@ -27,5 +27,24 @@ public class CreateUsersUsingReqSpecAndBuilder {
 	
 		
 	}
+	
+	public RequestSpecification updatetUserDetailsWithreqSpec() {
+		 RequestSpecBuilder builder = new RequestSpecBuilder();
+		 builder.setBody("{\r\n"
+		 		+ "    \"id\": 2,\r\n"
+		 		+ "    \"email\": \"janet.weaver@reqres.in\",\r\n"
+		 		+ "    \"first_name\": \"Janet\",\r\n"
+		 		+ "    \"last_name\": \"Weaver\",\r\n"
+		 		+ "    \"avatar\": \"https://reqres.in/img/faces/2-image.jpg\"\r\n"
+		 		+ "  }");
+		   builder.setContentType(ContentType.JSON);
+		// builder.addHeader("Authorization","Bearer 883cbb49eb5ac8b8671f873a69a6a5698638aa6ca0e2b9a8db396700a4cae642");
+		 builder.setBaseUri("https://reqres.in/api/users/2");
+		 RequestSpecification reqSpecification = builder.build();
+		   return reqSpecification; 
+		
+	
+		
+	}
      
 }
