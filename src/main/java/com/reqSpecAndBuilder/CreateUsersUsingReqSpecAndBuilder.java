@@ -5,7 +5,7 @@ import io.restassured.specification.RequestSpecification;
 // This class request Specification and builder Using RestAssured FramWork
 public class CreateUsersUsingReqSpecAndBuilder {
 	
-	public RequestSpecification createUserWithValidData() {
+	public RequestSpecification createUserWithValidData() {                 // Create User 
 		   RequestSpecBuilder builder = new RequestSpecBuilder();
 		   builder.setBody("{\r\n"
 					+ "    \"name\": \"Testing shastra\",\r\n"
@@ -18,9 +18,10 @@ public class CreateUsersUsingReqSpecAndBuilder {
 		   return reqSpecification; 
 	}
   
-	public RequestSpecification getUserWithreqSpec() {
+	public RequestSpecification getUserWithreqSpec() {                       // Get user Details
 		 RequestSpecBuilder builder = new RequestSpecBuilder();
-		 builder.setBaseUri("https://gorest.co.in/public/v2/users/7001810");
+		 builder.setBaseUri("https://reqres.in/api/users?page=2");
+		// builder.setBaseUri("https://gorest.co.in/public/v2/users/7001810");
 		 RequestSpecification reqSpecification = builder.build();
 		   return reqSpecification; 
 		
@@ -28,7 +29,7 @@ public class CreateUsersUsingReqSpecAndBuilder {
 		
 	}
 	
-	public RequestSpecification updatetUserDetailsWithreqSpec() {
+	public RequestSpecification updatetUserDetailsWithreqSpec() {       // Update user details using put and patch method
 		 RequestSpecBuilder builder = new RequestSpecBuilder();
 		 builder.setBody("{\r\n"
 		 		+ "    \"id\": 2,\r\n"
@@ -44,7 +45,7 @@ public class CreateUsersUsingReqSpecAndBuilder {
 		   return reqSpecification; 
 		}
 	
-	public RequestSpecification deletUserWithreqSpec() {
+	public RequestSpecification deletUserWithreqSpec() {                  // Delete user details
 		 RequestSpecBuilder builder = new RequestSpecBuilder();
 		 builder.setBaseUri("https://reqres.in/api/users/2");
 		 RequestSpecification reqSpecification = builder.build();
