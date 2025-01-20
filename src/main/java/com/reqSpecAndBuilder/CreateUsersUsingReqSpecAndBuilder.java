@@ -42,9 +42,17 @@ public class CreateUsersUsingReqSpecAndBuilder {
 		 builder.setBaseUri("https://reqres.in/api/users/2");
 		 RequestSpecification reqSpecification = builder.build();
 		   return reqSpecification; 
+		}
+	
+	public RequestSpecification deletUserWithreqSpec() {
+		 RequestSpecBuilder builder = new RequestSpecBuilder();
+		 builder.setBaseUri("https://reqres.in/api/users/2");
+		 RequestSpecification reqSpecification = builder.build();
+		   return reqSpecification; 
 		
 	
 		
 	}
+	
      
 }

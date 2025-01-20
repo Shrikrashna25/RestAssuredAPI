@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-17T13:03:01 IST" name="Default suite" finished-at="2025-01-17T13:03:03 IST" duration-ms="2095">
+  <suite started-at="2025-01-20T09:52:20 IST" name="Default suite" finished-at="2025-01-20T09:52:22 IST" duration-ms="1948">
     <groups>
     </groups>
-    <test started-at="2025-01-17T13:03:01 IST" name="Default test" finished-at="2025-01-17T13:03:03 IST" duration-ms="2095">
+    <test started-at="2025-01-20T09:52:20 IST" name="Default test" finished-at="2025-01-20T09:52:22 IST" duration-ms="1948">
       <class name="reqresTestCase.CreateuserForNormalWay">
-        <test-method signature="updateUserDetailsUsingReqSpec()[pri:0, instance:reqresTestCase.CreateuserForNormalWay@192d43ce]" started-at="2025-01-17T13:03:01 IST" name="updateUserDetailsUsingReqSpec" finished-at="2025-01-17T13:03:03 IST" duration-ms="2067" status="PASS">
+        <test-method signature="deletUserUsingReqSpec()[pri:0, instance:reqresTestCase.CreateuserForNormalWay@1afd44cb]" started-at="2025-01-20T09:52:20 IST" name="deletUserUsingReqSpec" finished-at="2025-01-20T09:52:22 IST" duration-ms="1919" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateUserDetailsUsingReqSpec -->
+        </test-method> <!-- deletUserUsingReqSpec -->
       </class> <!-- reqresTestCase.CreateuserForNormalWay -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

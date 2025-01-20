@@ -5,7 +5,7 @@
     <classes>
       <class name="reqresTestCase.CreateuserForNormalWay">
         <methods>
-          <include name="updateUserDetailsUsingReqSpec"/>
+          <include name="deletUserUsingReqSpec"/>
         </methods>
       </class> <!-- reqresTestCase.CreateuserForNormalWay -->
     </classes>

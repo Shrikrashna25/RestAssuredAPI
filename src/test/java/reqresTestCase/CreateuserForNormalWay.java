@@ -117,6 +117,28 @@ public class CreateuserForNormalWay {
 		.all()
 		.statusCode(200);
 	}	
-
-
+	
+	@Test
+	public void updateAllUserDetailsUsingReqSpec() {
+		CreateUsersUsingReqSpecAndBuilder reqSpec = new CreateUsersUsingReqSpecAndBuilder();
+		given(reqSpec.updatetUserDetailsWithreqSpec())
+		.when()
+		.patch()
+		.then()
+		.log()
+		.all()
+		.statusCode(200);
+	}	
+	
+	@Test
+	public void deletUserUsingReqSpec() {
+		CreateUsersUsingReqSpecAndBuilder reqSpec = new CreateUsersUsingReqSpecAndBuilder();
+		given(reqSpec.deletUserWithreqSpec())
+		.when()
+		.delete()
+		.then()
+		.log()
+		.all()
+		.statusCode(204);
+	}
 }
