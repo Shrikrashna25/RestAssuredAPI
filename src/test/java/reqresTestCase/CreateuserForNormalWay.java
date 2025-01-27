@@ -117,7 +117,7 @@ public class CreateuserForNormalWay {
 		.all()
 		.statusCode(200);
 	}	
-	
+	// update all data using patch method
 	@Test
 	public void updateAllUserDetailsUsingReqSpec() {
 		CreateUsersUsingReqSpecAndBuilder reqSpec = new CreateUsersUsingReqSpecAndBuilder();
